@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="experience-section container">
+  <h1 class="section-title text-center mb-5">Internship Journey</h1>
+
+  <!-- Bootstrap Carousel -->
+  <div id="internshipCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Prodigy Slide -->
+      <div class="carousel-item active">
+        <div class="internship-card d-flex flex-column flex-md-row align-items-center justify-content-center">
+          <div class="logo-container me-md-4 mb-4 mb-md-0">
+            <img src="{{ url_for('static', filename='images/prodigy-logo.jpeg') }}" class="company-logo" alt="Prodigy Logo">
+          </div>
+          <div>
+            <h2>Prodigy InfoTech <span>(Mar 2025 – Apr 2025)</span></h2>
+            <h4>Web Development Intern</h4>
+            <ul>
+            <li>Created responsive websites using HTML,CSS&JavaScript.</li>
+            <li>Built multiple UI components and frontend features.</li>
+            <li>Enhanced interactivity using modern JS functions.</li>
+            </ul>
+            <div class="project-buttons">
+              <a href="https://savorspot.w3spaces.com/" class="btn btn-outline-warning" target="_blank">Project 1</a>
+              <a href="https://github.com/shipali-k-account/PRODIGY_WD_05" class="btn btn-outline-warning" target="_blank">Project 2</a>
+              <a href="https://github.com/shipali-k-account/PRODIGY_WD_03" class="btn btn-outline-warning" target="_blank">Project 3</a>
+              <a href="https://github.com/shipali-k-account/PRODIGY_WD_02" class="btn btn-outline-warning" target="_blank">Project 4</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OctaNet Slide -->
+      <div class="carousel-item">
+        <div class="internship-card d-flex flex-column flex-md-row align-items-center justify-content-center">
+          <div class="logo-container me-md-4 mb-4 mb-md-0">
+            <img src="{{ url_for('static', filename='images/octanet-logo.jpeg') }}" class="company-logo" alt="OctaNet Logo">
+          </div>
+          <div>
+            <h2>OctaNet Services Pvt.Ltd.<span>(May 2025–Jun 2025)</span></h2>
+            <h4>Python Development Intern</h4>
+            <ul>
+            <li> Built GUI apps with Tkinter and web apps using Flask.</li>
+            <li> Handled SQLite DB with CRUD and form processing.</li>
+            <li>   Applied exception handling and core Python techniques.</li>
+            </ul>
+            <div class="project-buttons">
+              <a href="https://github.com/shipali-k-account/Student-Management-System" class="btn btn-outline-success" target="_blank">Project 1</a>
+              <a href="https://github.com/shipali-k-account/ATM-Simulator" class="btn btn-outline-success" target="_blank">Project 2</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#internshipCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#internshipCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+{% endblock %}
