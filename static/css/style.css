@@ -864,6 +864,29 @@ nav ul li a:hover {
 n .btn:hover {
   transform: scale(1.05);
 }
+timeline-content p {
+  font-size: 0.9rem; 
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+.college-name {
+  font-size: 0.75rem;
+  line-height: 1.3;
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 576px) {
+  .college-name {
+    font-size: 0.75rem;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .timeline-content p {
+    font-size: 0.85rem; /* smaller font for mobile */
+  }
+}
 /* skills */
 .skills-section {
   background-color: rgba(255, 255, 255, 0.03);
@@ -893,24 +916,24 @@ n .btn:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 35px;
+  gap: 15px;
 }
 
 .skill-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100px;
+  width: 90px;
   animation: bounceInSpin 1s ease-in-out both;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .skill-icon, .platform-icon {
-  width: 100px;
+  width: 90px;
 }
 
 .skill-icon img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: #ffffff0a;
   padding: 10px;
@@ -920,8 +943,8 @@ n .btn:hover {
   filter: brightness(1.05) contrast(1.1);
 }
 .platform-icon img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 
 @media (max-width: 480px) {
@@ -958,81 +981,45 @@ n .btn:hover {
     transform: scale(1) rotate(0deg);
   }
 }
-.freelance-project {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* dark gradient */
-  color: #fff;
-  padding: 50px 20px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  
-}
 .custom-paragraph-bg {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.8); 
+  padding: 20px;
   border-radius: 12px;
-  color: #fff;
+  color: #fff; 
   margin-top: 10px;
-  font-size: clamp(0.8rem, 1.5vw, 0.9rem); 
-  line-height: 1.5;
-}
-
-.project-highlight {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  overflow: hidden;
-  color: #fff;
-}
-
-.project-highlight .card-body {
-  background-color: #1c1c1c;
-  color: white;
-  padding: 30px;
-  
-}
-
-.project-highlight .btn-outline-info {
-  border-radius: 30px;
-  padding: 10px 25px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-
-.project-highlight .btn-outline-info:hover {
-  background-color: #17a2b8;
-  color:black;
-  transform: scale(1.05);
-}
-.clinic-title {
-  color: #000000;        
-  font-weight: bold;     
-  font-size: 24px;  
+  transition: all 0.4s ease;
 }
 
 .project-highlight img {
-  max-height: 280px;
-  object-fit: cover;
   width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.project-highlight {
+  background-color: #000; 
+  color: #fff;           
+  border-radius: 12px;
+}
+.project-highlight .card-body {
+  background-color: #111; 
+  border-radius: 0 12px 12px 0;
+}
+.clinic-title {
+ color: #ffffff !important;
+  font-weight: 700;
+  border-bottom: 2px solid #28a745;
+  padding-bottom: 6px;
+  display: inline-block;
 }
 
-.fade-in {
-  opacity: 0;
-  animation: fadeInAnimation 1.5s ease forwards;
+.toggle-btn {
+  font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 
-@keyframes fadeInAnimation {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-}
-.project-highlight .card-text {
-  color: #333; 
+.toggle-btn:hover {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
 }
 
 
@@ -1099,7 +1086,7 @@ n .btn:hover {
 /* practice */
 .coding-platforms {
   background-color: rgba(255, 255, 255, 0.03);
-  padding: 50px 30px;
+  padding: 40px 30px;
   border-radius: 20px;
   margin-top: 50px;
 }
@@ -1117,7 +1104,7 @@ n .btn:hover {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  width: 120px;
+  width: 100px;
   padding: 10px;
   border-radius: 15px;
   background-color: #1a1a1a;
@@ -1132,8 +1119,8 @@ n .btn:hover {
 }
 
 .platform-icon img {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;

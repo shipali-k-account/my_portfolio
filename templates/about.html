@@ -23,8 +23,8 @@
       <div class="timeline-content">
         <h5 class="degree-title">Master of Computer Applications</h5>
         <span class="timeline-date">2024 – 2026</span>
-        <p><i class="fas fa-university text-info"></i> ST ALOYSIUS (DEEMED TO BE UNIVERSITY) MANGALURU</p>
-        <p>Focusing on Full-Stack Development, Data Structures & Algorithms.</p>
+        <p class="college-name"><i class="fas fa-university text-info"></i> ST ALOYSIUS (DEEMED TO BE UNIVERSITY) MANGALURU</p>
+        <h5>Focusing on Full-Stack Development, Data Structures & Algorithms.</h5>
       </div>
     </div>
 
@@ -33,9 +33,9 @@
       <div class="timeline-content">
         <h5 class="degree-title"> Bachelor of Computer Science</h5>
         <span class="timeline-date">2021 – 2024</span>
-        <p><i class="fas fa-university text-info"></i> DR. P. DAYANANDA PAI P. SATHISHA PAI GOVERNMENT            
+        <p class="college-name"><i class="fas fa-university text-info"></i> DR. P. DAYANANDA PAI P. SATHISHA PAI GOVERNMENT            
         FIRST GRADE COLLEGE, MANGALURU</p>
-        <p>Focused on improving programming skills throughout the course.</p>
+        <h5>Focused on improving programming skills throughout the course.</h5>
       </div>
     </div>
 
@@ -44,8 +44,8 @@
       <div class="timeline-content">
         <h5 class="degree-title">Pre-University Course (PUC)</h5>
         <span class="timeline-date">2019 – 2021</span>
-        <p><i class="fas fa-university text-info"></i> SRI RAMA PU COLLEGE ,KALLADKA </p>
-        <p>Completed Pre-University education in the EBAC stream.</p>
+        <p class="college-name"><i class="fas fa-university text-info"></i> SRI RAMA PU COLLEGE ,KALLADKA </p>
+        <h5>Completed Pre-University education in the EBAC stream.</h5>
       </div>
     </div>
   </section>
@@ -123,37 +123,51 @@
   </div>
 
 </section>
-<!-- 💼 Freelance Project Spotlight -->
 <section class="freelance-project mt-5 fade-in">
-  <h3 class="section-title text-center"><i class="fas fa-briefcase text-success"></i> Freelance Project Spotlight</h3>
-  
+  <h3 class="section-title text-center">
+    <i class="fas fa-briefcase text-success"></i> Freelance Project Spotlight
+  </h3>
+
   <div class="card project-highlight shadow-lg mt-4">
     <div class="row g-0 align-items-center">
       <div class="col-md-5">
-        <img src="{{ url_for('static', filename='images/project1.png') }}" class="img-fluid rounded-start" alt="Morton Dental Website">
+        <img src="{{ url_for('static', filename='images/project1.png') }}" class="img-fluid rounded-start w-100" alt="Morton Dental Website">
       </div>
       <div class="col-md-7">
         <div class="card-body">
-          <h4 class="card-title  clinic-title">Morton Dental Clinic – Australia</h4>
+          <h4 class="card-title clinic-title">Morton Dental Clinic – Australia</h4>
 
-          
-          <p class="card-text text-light fs-5 custom-paragraph-bg">
-  This was a real-world freelance project where I collaborated with friends to build the
-  <strong>official website for Morton Dental</strong> using <strong>Next.js</strong>. The site is fully responsive,
-  SEO-optimized, and professionally designed to represent an Australian dental clinic’s services.
-  We were also paid for this project.
-</p>
+          <!-- Collapsible Details -->
+          <div class="collapse" id="projectDetails">
+            <p class="card-text text-light fs-5 custom-paragraph-bg mt-2">
+              This was a real-world freelance project where I collaborated with friends to build the
+              <strong>official website for Morton Dental</strong> using <strong>Next.js</strong>. The site is fully responsive,
+              SEO-optimized, and professionally designed to represent an Australian dental clinic’s services.
+              We were also paid for this project.
+            </p>
+          </div>
+
+          <!-- Tech Stack -->
           <p class="card-text">
-            <span class="badge bg-secondary">Tech Stack: Next.js, Tailwind CSS,MongoDB</span>
+            <span class="badge bg-secondary">Tech Stack: Next.js, Tailwind CSS</span>
           </p>
-          <a href="https://www.mortondental.com.au/" target="_blank" class="btn btn-outline-info mt-3">
+
+          <!-- Toggle Button -->
+          <button class="btn btn-outline-success mt-2 toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#projectDetails" aria-expanded="false" aria-controls="projectDetails">
+            <i class="fas fa-chevron-down"></i> <span class="toggle-text">Show Details</span>
+          </button>
+
+          <!-- Visit Website -->
+          <a href="https://www.mortondental.com.au/" target="_blank" class="btn btn-outline-info mt-3 ms-2">
             <i class="fas fa-external-link-alt"></i> Visit Website
           </a>
         </div>
       </div>
     </div>
   </div>
-</section> 
+</section>
+
+
 
 <!-- 📝 Blog Card -->
 <div class="blog-card fade-in mt-5">
