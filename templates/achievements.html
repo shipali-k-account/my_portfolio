@@ -3,112 +3,60 @@
 <section class="achievements-page">
   <h1 class="page-title">🌟 My Achievements</h1>
   <p class="section-description">
-  This space highlights my learning journey — from completing hands-on courses to consistently sharpening my skills through coding practice. Each certificate and badge represents a step forward, a new challenge accepted, and a passion for growing as a full-stack developer. Whether it's backend logic or frontend design, I believe in learning by doing — and these achievements tell that story.
-</p>
-<div class="achievements-container">
-<!-- Certificates Section -->
+    This space highlights my learning journey — from completing hands-on courses to sharpening my skills through coding practice.
+  </p>
+
+  <div class="achievements-container">
+
+    <!-- Course Certificates -->
     <div class="achievement-card">
-      <h2>📜 Course Certificates</h2>
-      <div class="items-grid">
-         <div class="item">
-          <img src="{{ url_for('static', filename='images/certificate6.png') }}" alt="Certificate 3">
-          <p>Privacy and Security in Online Social Media-NPTL</p>
-          <a href="{{ url_for('static', filename='images/certificate6.png') }}" class="btn-view" target="_blank">View</a>
+      <h2 class="section-heading">📜 Course Certificates</h2>
+      <div class="slider-container" id="certificatesSlider">
+        <div class="slider-track">
+          {% for cert in [
+            ('certificate6.png', 'Privacy and Security in Online Social Media - NPTEL'),
+            ('certificate8.png', 'Object Oriented System Development - NPTEL'),
+            ('certificate1.png', 'Web Development Bootcamp - Udemy'),
+            ('certificate2.png', 'Python Foundation - Infosys Springboard'),
+            ('certificate10.png', 'Google Cybersecurity - Coursera'),
+            ('certificate5.png', 'SQL & Relational Databases - Cognitive Class AI'),
+            ('internshipCertificatte.png', 'Internship Completion Certificate')
+          ] %}
+          <div class="slider-item">
+            <img src="{{ url_for('static', filename='images/' ~ cert[0]) }}" alt="{{ cert[1] }}">
+            <p>{{ cert[1] }}</p>
+            <a href="{{ url_for('static', filename='images/' ~ cert[0]) }}" class="btn-view" target="_blank">View</a>
+          </div>
+          {% endfor %}
         </div>
-
-        <div class="item">
-          <img src="{{ url_for('static', filename='images/certificate8.png') }}" alt="Certificate 3">
-          <p>Object Oriented System Development-NPTL</p>
-          <a href="{{ url_for('static', filename='images/certificate8.png') }}" class="btn-view" target="_blank">View</a>
-        </div>
-
-        <div class="item">
-          <img src="{{ url_for('static', filename='images/certificate1.png') }}" alt="Certificate 1">
-          <p>Web Development Bootcamp - Udemy</p>
-          <a href="{{ url_for('static', filename='images/certificate1.png') }}" class="btn-view" target="_blank">View</a>
-        </div>
-
-        <div class="item">
-          <img src="{{ url_for('static', filename='images/certificate2.png') }}" alt="Certificate 2">
-          <p>Python Foundation  - Infosys Springboard</p>
-          <a href="{{ url_for('static', filename='images/certificate2.png') }}" class="btn-view" target="_blank">View</a>
-        </div>
-
-        <div class="item">
-          <img src="{{ url_for('static', filename='images/certificate10.png') }}" alt="Certificate 3">
-          <p>GoogleCybersecurity-Coursera</p>
-          <a href="{{ url_for('static', filename='images/certificate10.png') }}" class="btn-view" target="_blank">View</a>
-        </div>
-
-      <div class="item">
-          <img src="{{ url_for('static', filename='images/certificate5.png') }}" alt="Certificate 3">
-          <p>SQL and Realtional Databases-Cognitive Class Ai </p>
-          <a href="{{ url_for('static', filename='images/certificate5.png') }}" class="btn-view" target="_blank">View</a>
-        </div>
-
-       <div class="item">
-          <img src="{{ url_for('static', filename='images/internshipCertificatte.png') }}" alt="Certificate 3">
-          <p>Internship Completion Certificate</p>
-          <a href="{{ url_for('static', filename='images/internshipCertificatte.png') }}" class="btn-view" target="_blank">View</a>
-        </div>
-
-</div>
+      </div>
     </div>
 
-    <!-- Badges Section -->
+    <!-- Coding Badges -->
     <div class="achievement-card">
-      <h2>👨‍💻 Coding Practice</h2>
-      <div class="items-grid">
-        <div class="item">
-          <img src="{{ url_for('static', filename='images/badge1.png') }}" alt="Badge 1">
-          <p>Bronze Streak Badge - CodeChef</p>
-          <a href="{{ url_for('static', filename='images/badge1.png') }}" class="btn-view" target="_blank">View</a>
+      <h2 class="section-heading">👨‍💻 Coding Practice</h2>
+      <div class="slider-container" id="badgesSlider">
+        <div class="slider-track">
+          {% for badge in [
+            ('badge1.png', 'Bronze Streak - CodeChef'),
+            ('badge2.png', 'Silver Streak - CodeChef'),
+            ('badge3.png', 'Gold Streak - CodeChef'),
+            ('badge4.png', 'Python Online Test - CodeChef'),
+            ('badge7.jpg', 'SQL Test – CodeChef'),
+            ('badge6.png', '50 Problems - CodeChef'),
+            ('badge8.png', '250 Problems - CodeChef'),
+            ('badge5.png', 'CSS - HackerRank')
+          ] %}
+          <div class="slider-item">
+            <img src="{{ url_for('static', filename='images/' ~ badge[0]) }}" alt="{{ badge[1] }}">
+            <p>{{ badge[1] }}</p>
+            <a href="{{ url_for('static', filename='images/' ~ badge[0]) }}" class="btn-view" target="_blank">View</a>
+          </div>
+          {% endfor %}
         </div>
-
-        <div class="item">
-          <img src="{{ url_for('static', filename='images/badge2.png') }}" alt="Badge 2">
-          <p>Silver Streak Badge - CodeChef</p>
-          <a href="{{ url_for('static', filename='images/badge2.png') }}" class="btn-view" target="_blank">View</a>
-        </div>
-
-        <div class="item">
-          <img src="{{ url_for('static', filename='images/badge3.png') }}" alt="Badge 3">
-          <p>Gold Streak Badge - CodeChef</p>
-          <a href="{{ url_for('static', filename='images/badge3.png') }}" class="btn-view" target="_blank">View</a>
-        </div>
-
-        <div class="item">
-          <img src="{{ url_for('static', filename='images/badge4.png') }}" alt="Badge 3">
-          <p>Python Online Test - CodeChef</p>
-          <a href="{{ url_for('static', filename='images/badge4.png') }}" class="btn-view" target="_blank">View</a>
-        </div>
-
-        
-        <div class="item">
-          <img src="{{ url_for('static', filename='images/badge7.jpg') }}" alt="Badge 3">
-          <p> SQL Online Test – Completed on CodeChef </p>
-          <a href="{{ url_for('static', filename='images/badge7.jpg') }}" class="btn-view" target="_blank">View</a>
-        </div>
-          <div class="item">
-          <img src="{{ url_for('static', filename='images/badge6.png') }}" alt="Badge 3">
-          <p>50 Problems on CodeChef - CodeChef</p>
-          <a href="{{ url_for('static', filename='images/badge6.png') }}" class="btn-view" target="_blank">View</a>
-        </div>
-         <div class="item">
-          <img src="{{ url_for('static', filename='images/badge8.png') }}" alt="Badge 3">
-          <p>250 Problems on CodeChef - CodeChef</p>
-          <a href="{{ url_for('static', filename='images/badge8.png') }}" class="btn-view" target="_blank">View</a>
-        </div>
-        <div class="item">
-          <img src="{{ url_for('static', filename='images/badge5.png') }}" alt="Badge 3">
-          <p> CSS - HackerRank</p>
-          <a href="{{ url_for('static', filename='images/badge5.png') }}" class="btn-view" target="_blank">View</a>
-        </div>
-
-       
-
-   </div>
+      </div>
     </div>
+
   </div>
 </section>
 <div id="popup" class="popup-overlay">
@@ -116,4 +64,3 @@
   <img id="popup-img" src="" alt="Popup Preview" />
 </div>
 {% endblock %}
-
