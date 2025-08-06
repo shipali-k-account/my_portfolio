@@ -5,7 +5,6 @@
    <h1>Hello, I'm <span class="highlight">Shipali K</span></h1>
 <h2>Python Enthusiast | Full-Stack Developer</h2>
 <p>
-  <p>
     I enjoy creating websites and applications that are simple, clean, and easy to use.  
   I like working on different areas of IT, from front-end to back-end and more.  
   I'm always learning and improving my skills to grow in the tech field.
@@ -425,7 +424,7 @@
   {% endwith %}
 <div class="row justify-content-center">
     <div class="col-md-8 contact-form-container">
-      <form method="POST">
+      <form method="POST" action="{{ url_for('contact') }}">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <input type="text" name="subject" placeholder="Subject" required>
