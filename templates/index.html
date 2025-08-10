@@ -218,69 +218,83 @@
 </div>
 </div>
 <h2 class="section-title">Showcasing My Work</h2>
+
 <div class="project-wrapper">
   <div class="project-container">
-    <!-- Project 1 -->
+
     <div class="project-card">
-  <img src="{{ url_for('static', filename='images/project1.png') }}" alt="recommendation">
-  <h3><i class="fas fa-tooth text-info"></i> Morton Dental Website</h3>
-  <a href="https://www.mortondental.com.au/" target="_blank" class="project-link">Project Overview</a>
-</div>
-<!-- Project 2 -->
+      <img src="{{ url_for('static', filename='images/project1.png') }}" alt="recommendation">
+      <h3><i class="fas fa-tooth text-info"></i> Morton Dental Website</h3>
+      <div class="project-buttons">
+        <a href="https://github.com/Smuktha/mortondental" target="_blank" class="btn btn-github">GitHub</a>
+        <a href="https://www.mortondental.com.au/" target="_blank" class="btn btn-live">Live Demo</a>
+      </div>
+    </div>
+
     <div class="project-card">
       <img src="{{ url_for('static', filename='images/recommendation.png') }}" alt="recommendation">
       <h3>🎬 Movie Recommender System</h3>
-      <a href="https://github.com/shipali-k-account/Movie_Recommender_Project" target="_blank" class="project-link">Project Overview</a>
+      <div class="project-buttons">
+        <a href="https://github.com/shipali-k-account/Movie_Recommender_Project" target="_blank" class="btn btn-github">GitHub</a>
+        <a href="https://movie-recommender-project-va7w.onrender.com" target="_blank" class="btn btn-live">Live Demo</a>
+      </div>
     </div>
-<!-- Project 3 -->
+
     <div class="project-card">
-      <img src="{{ url_for('static', filename='images/review.jpg') }}" alt="lodge_review">
+      <img src="{{ url_for('static', filename='images/review.jpg') }}" alt="recommendation">
       <h3>🏨 Lodge Review System</h3>
-      <a href="https://lodge-review.onrender.com" target="_blank" class="project-link">Project Overview</a>
-</div>
-<!-- Project 4 -->
+      <div class="project-buttons">
+        <a href="https://github.com/shipali-k-account/lodge_review/blob/main/qr_code.png" target="_blank" class="btn btn-github">GitHub</a>
+        <a href="https://lodge-review.onrender.com" target="_blank" class="btn btn-live">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="{{ url_for('static', filename='images/gill.png') }}" alt="recommendation">
+      <h3>🚀 My First Blog Project</h3>
+      <div class="project-buttons">
+        <a href="https://github.com/shipali-k-account/Shubman_Gill_Blog" target="_blank" class="btn btn-github">GitHub</a>
+        <a href="https://shubman-gill-blog.onrender.com" target="_blank" class="btn btn-live">Live Demo</a>
+      </div>
+    </div>
+
     <div class="project-card">
       <img src="{{ url_for('static', filename='images/photo.png') }}" alt="Restaurant">
       <h3>🍽️ Responsive Restaurant Website</h3>
       <a href="https://savorspot.w3spaces.com/" target="_blank" class="project-link">Project Overview</a>
     </div>
-<!-- Project 5 -->
+
     <div class="project-card">
       <img src="{{ url_for('static', filename='images/home.png') }}" alt="Student">
       <h3>📘 Student Management System</h3>
       <a href="https://github.com/shipali-k-account/Student-Management-System" target="_blank" class="project-link">Project Overview</a>
     </div>
-<!-- Project 6 -->
+
     <div class="project-card">
       <img src="{{ url_for('static', filename='images/Nature.png') }}" alt="nature">
       <h3>🌿 Nature-Themed Photo Gallery</h3>
       <a href="https://github.com/shipali-k-account/Nature-Themed-Photo-Gallery-" target="_blank" class="project-link">Project Overview</a>
     </div>
-<!-- Project 7 -->
-    <div class="project-card">
-      <img src="{{ url_for('static', filename='images/gill.png') }}" alt="gill">
-      <h3>🏏 Shubman Gill Blog</h3>
-      <a href="https://github.com/shipali-k-account/Shubman_Gill_Blog" target="_blank" class="project-link">Project Overview</a>
-    </div>
-<!-- Project 8 -->
+
+
     <div class="project-card">
       <img src="{{ url_for('static', filename='images/stopwatch.png') }}" alt="watch">
       <h3>⏱️ Stopwatch Web Application</h3>
       <a href="https://github.com/shipali-k-account/PRODIGY_WD_02" target="_blank" class="project-link">Project Overview</a>
     </div>
-<!-- Project 9 -->
+
     <div class="project-card">
       <img src="{{ url_for('static', filename='images/Tic-Tac-Toe.png') }}" alt="game">
       <h3>🎮 Tic-Tac-Toe Game</h3>
       <a href="https://github.com/shipali-k-account/PRODIGY_WD_03" target="_blank" class="project-link">Project Overview</a>
     </div>
-<!-- Project 10 -->
+
     <div class="project-card">
     <img src="{{ url_for('static', filename='images/ATMenu.png') }}" alt="ATM">
     <h3>🏧 ATM Simulator</h3>
     <a href="https://github.com/shipali-k-account/ATM-Simulator" target="_blank" class="project-link">Project Overview</a>
   </div>
-   <!-- Project 11 -->
+  
   <div class="project-card">
     <img src="{{ url_for('static', filename='images/weather.png') }}" alt="Weather">
     <h3>🌦️ State-Based Weather App</h3>
@@ -290,10 +304,10 @@
 </div>
 <div class="experience-section container">
 <h1 class="section-title text-center mb-5">Internship Journey</h1>
-<!-- Bootstrap Carousel -->
+
   <div id="internshipCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-<!-- Prodigy Slide -->
+
       <div class="carousel-item active">
         <div class="internship-card d-flex flex-column flex-md-row align-items-center justify-content-center">
           <div class="logo-container me-md-4 mb-4 mb-md-0">
@@ -316,7 +330,7 @@
           </div>
         </div>
       </div>
-<!-- OctaNet Slide -->
+
       <div class="carousel-item">
         <div class="internship-card d-flex flex-column flex-md-row align-items-center justify-content-center">
           <div class="logo-container me-md-4 mb-4 mb-md-0">
@@ -338,7 +352,7 @@
         </div>
       </div>
 </div>
-<!-- Controls -->
+
     <button class="carousel-control-prev" type="button" data-bs-target="#internshipCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </button>
@@ -356,7 +370,7 @@
 
   <div class="achievements-container">
 
-    <!-- Course Certificates -->
+    
     <div class="achievement-card">
       <h2 class="section-heading">📜 Course Certificates</h2>
       <div class="slider-container" id="certificatesSlider">

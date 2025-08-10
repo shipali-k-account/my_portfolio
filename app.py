@@ -4,7 +4,7 @@ import os
 import smtplib
 from datetime import datetime
 
-# Load variables from .env
+
 load_dotenv()
 
 EMAIL_USER=os.getenv("EMAIL_USER")

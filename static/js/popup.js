@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // View button popup logic
+  
   document.querySelectorAll('.btn-view').forEach(btn => {
     btn.addEventListener('click', function (e) {
       e.preventDefault();
@@ -9,14 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Sidebar toggle
+
   const menuToggle = document.getElementById("menuToggle");
   const sidebar = document.querySelector(".sidebar");
   menuToggle.addEventListener("click", () => {
     sidebar.classList.toggle("active");
   });
 
-  // Toggle "Show/Hide Details" text
   const toggleBtn = document.querySelector('.toggle-btn');
   const toggleText = toggleBtn.querySelector('.toggle-text');
   const collapse = document.getElementById('projectDetails');
@@ -29,22 +28,21 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleText.textContent = "Show Details";
   });
 
-  // Enable drag for sliders
+  
   enableSliderDrag('certificatesSlider');
   enableSliderDrag('badgesSlider');
 
-  // Enable auto-slide for sliders
+
   autoSlideSlider('certificatesSlider', 1.5);
   autoSlideSlider('badgesSlider', 1.5);
 });
 
-// Close popup function
 function closePopup() {
   document.getElementById('popup').style.display = 'none';
   document.getElementById('popup-img').src = '';
 }
 
-// Slider drag scroll logic
+
 function enableSliderDrag(sliderId) {
   const slider = document.getElementById(sliderId);
   let isDown = false;
@@ -63,12 +61,12 @@ function enableSliderDrag(sliderId) {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 2; // scroll speed
+    const walk = (x - startX) * 2; 
     slider.scrollLeft = scrollLeft - walk;
   });
 }
 
-// Auto-slide logic
+
 function autoSlideSlider(sliderId, speed = 2) {
   const slider = document.getElementById(sliderId);
   let scrollAmount = 0;
@@ -81,7 +79,7 @@ function autoSlideSlider(sliderId, speed = 2) {
     slider.scrollTo({ left: scrollAmount, behavior: 'smooth' });
   }
 
-  setInterval(slide, 50); // adjust interval speed here
+  setInterval(slide, 50); 
 }
 
 
