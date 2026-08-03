@@ -1,230 +1,146 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="about-wrap">
 
+  <!-- HERO INTRO -->
+  <section class="about-hero">
+    <div class="about-hero-icon"><img src="{{ url_for('static', filename='images/PhotoMca1.jpg') }}" alt="Me"></div>
+    <h1>About Me</h1>
+    <p>I am a passionate tech enthusiast focused on building clean, efficient, and user-friendly solutions. With a strong interest in Python and full-stack development, my goal is to become a versatile IT professional who creates impactful software and continually adapts to new technologies.</p>
+  </section>
 
+  <!-- EDUCATION -->
+  <section class="edu-section">
+    <h2 class="section-heading"><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div class="edu-road">
 
-<div class="container py-5 about-section">
-  <h1 class="section-title text-center mb-5"><i class="fas fa-user-graduate"></i> About Me</h1>
-
-  <!-- Objective -->
-  <div class="mb-5 fade-in">
-    <h3>Objective</h3>
-    <p class="text-light fs-5">I am a passionate tech enthusiast focused on building clean, efficient, and user-friendly solutions.  
-    With a strong interest in Python and full-stack development, my goal is to become a versatile IT professional who creates impactful software and continually adapts to new technologies.
-</p>
-  </div>
-
-  <!-- Education Section -->
-  <section class="education-timeline fade-in">
-    <h3 class="section-title"><i class="fas fa-graduation-cap text-warning"></i> Education</h3>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h5 class="degree-title">Master of Computer Applications</h5>
-        <span class="timeline-date">2024 – 2026</span>
-        <p class="college-name"><i class="fas fa-university text-info"></i> ST ALOYSIUS (DEEMED TO BE UNIVERSITY) MANGALURU</p>
-        <h5>Focusing on Full-Stack Development, Data Structures & Algorithms.</h5>
+      <div class="edu-stop">
+        <div class="edu-dot"></div>
+        <div class="edu-box">
+          <span class="edu-tag">2024 – 2026</span>
+          <h3>Master of Computer Applications</h3>
+          <p>ST ALOYSIUS (DEEMED TO BE UNIVERSITY) MANGALURU</p>
+        </div>
       </div>
-    </div>
 
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h5 class="degree-title"> Bachelor of Computer Science</h5>
-        <span class="timeline-date">2021 – 2024</span>
-        <p class="college-name"><i class="fas fa-university text-info"></i> DR. P. DAYANANDA PAI P. SATHISHA PAI GOVERNMENT            
-        FIRST GRADE COLLEGE, MANGALURU</p>
-        <h5>Focused on improving programming skills throughout the course.</h5>
+      <div class="edu-stop">
+        <div class="edu-dot"></div>
+        <div class="edu-box">
+          <span class="edu-tag">2021 – 2024</span>
+          <h3>Bachelor of Computer Science</h3>
+          <p>DR. P. DAYANANDA PAI P. SATHISHA PAI GOVERNMENT FIRST GRADE COLLEGE, MANGALURU</p>
+        </div>
       </div>
-    </div>
 
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h5 class="degree-title">Pre-University Course (PUC)</h5>
-        <span class="timeline-date">2019 – 2021</span>
-        <p class="college-name"><i class="fas fa-university text-info"></i> SRI RAMA PU COLLEGE ,KALLADKA </p>
-        <h5>Completed Pre-University education in the EBAC stream.</h5>
+      <div class="edu-stop">
+        <div class="edu-dot"></div>
+        <div class="edu-box">
+          <span class="edu-tag">2019 – 2021</span>
+          <h3>Pre-University Course (PUC)</h3>
+          <p>SRI RAMA PU COLLEGE, KALLADKA</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skill-section">
+    <h2 class="section-heading"><i class="fas fa-laptop-code"></i> Skills</h2>
+
+    <div class="skill-grid">
+      <div class="skill-cat">
+        <h4>Languages</h4>
+        <div class="cat-items">
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/c.png') }}"><span>C</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/c++.jpg') }}"><span>C++</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/java.png') }}"><span>Core Java</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/python.png') }}"><span>Python</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/c#.jpeg') }}"><span>C#</span></div>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <h4>Frontend</h4>
+        <div class="cat-items">
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/html.png') }}"><span>HTML5</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/css.png') }}"><span>CSS3</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/javascript.jpeg') }}"><span>JavaScript</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/bootstrap.png') }}"><span>Bootstrap</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/tailwind.png') }}"><span>Tailwind</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/react.png') }}"><span>React.js</span></div>
+          <div class="skill-item"><div class="s-placeholder" style="background:linear-gradient(135deg,#dd0031,#c3002f)"><i class="fab fa-angular"></i></div><span>Angular</span></div>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <h4>Backend</h4>
+        <div class="cat-items">
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/nj.png') }}"><span>Node.js</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/express.png') }}"><span>Express.js</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/php.png') }}"><span>PHP</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/flask.png') }}"><span>Flask</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/django.png') }}"><span>Django</span></div>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <h4>Databases</h4>
+        <div class="cat-items">
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/mq.png') }}"><span>MySQL</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/sqlite.jpeg') }}"><span>SQLite</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/mongodb.png') }}"><span>MongoDB</span></div>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <h4>Mobile &amp; Tools</h4>
+        <div class="cat-items">
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/android.png') }}"><span>Android</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/git.png') }}"><span>Git</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/github.jpeg') }}"><span>GitHub</span></div>
+          <div class="skill-item"><img src="{{ url_for('static', filename='images/render.png') }}"><span>Render</span></div>
+        </div>
       </div>
     </div>
   </section>
-<!-- Skills Section -->
-<section class="skills-section mt-5 fade-slide-in">
-  <h3 class="section-title text-center"><i class="fas fa-laptop-code text-warning"></i> Skills</h3>
 
-  <!--  Programming Languages -->
-  <div class="skill-block">
-    <h4><i class="fas fa-code text-primary"></i> Programming Languages</h4>
-    <div class="skills-grid">
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/c.png') }}"><span>C</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/c++.jpg') }}"><span>C++</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/java.png') }}"><span>Core Java</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/python.png') }}"><span>Python</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/c#.jpeg') }}"><span>C#</span></div>
-    </div>
-  </div>
+  <!-- BLOGS -->
+  <section class="blog-section">
+    <h2 class="section-heading"><i class="fas fa-pen-nib"></i> My Blog</h2>
+    <div class="blog-track">
 
-  <!--  Frontend Web Development -->
-  <div class="skill-block">
-    <h4><i class="fas fa-paint-brush text-success"></i> Frontend Web Development</h4>
-    <div class="skills-grid">
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/html.png') }}"><span>HTML5</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/css.png') }}"><span>CSS3</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/javascript.jpeg') }}"><span>JavaScript</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/bootstrap.png') }}"><span>Bootstrap</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/tailwind.png') }}"><span>Tailwind CSS</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/react.png') }}"><span>React.js</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/nextjs.png') }}"><span>Next.js</span></div>
-      
-    </div>
-  </div>
-
-  <!--  Backend Web Development -->
-  <div class="skill-block">
-    <h4><i class="fas fa-server text-danger"></i> Backend Web Development</h4>
-    <div class="skills-grid">
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/nj.png') }}"><span>Node.js</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/express.png') }}"><span>Express.js</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/php.png') }}"><span>PHP</span></div>
- 
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/flask.png') }}"><span>Flask</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/django.png') }}"><span>Django</span></div>
-    </div>
-  </div>
-
-  <!-- Databases -->
-  <div class="skill-block">
-    <h4><i class="fas fa-database text-info"></i> Databases</h4>
-    <div class="skills-grid">
-      
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/mq.png') }}"><span>MySQL</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/sqlite.jpeg') }}"><span>SQLite</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/mongodb.png') }}"><span>MongoDB</span></div>
-    </div>
-  </div>
-
-  <!-- Mobile App -->
-  <div class="skill-block">
-    <h4><i class="fas fa-mobile-alt text-warning"></i> Mobile App Development</h4>
-    <div class="skills-grid">
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/android.png') }}"><span>Android (Java)</span></div>
-    </div>
-  </div>
-
-  <!--  Tools -->
-  <div class="skill-block">
-    <h4><i class="fas fa-tools text-secondary"></i> Tools & Version Control</h4>
-    <div class="skills-grid">
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/git.png') }}"><span>Git</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/github.jpeg') }}"><span>GitHub</span></div>
-      <div class="skill-icon"><img src="{{ url_for('static', filename='images/render.png') }}"><span>Render</span></div>
-    </div>
-  </div>
-
-</section>
-<section class="freelance-project mt-5 fade-in">
-  <h3 class="section-title text-center">
-    <i class="fas fa-briefcase text-success"></i> Freelance Project Spotlight
-  </h3>
-
-  <div class="card project-highlight shadow-lg mt-4">
-    <div class="row g-0 align-items-center">
-      <div class="col-md-5">
-        <img src="{{ url_for('static', filename='images/project1.png') }}" class="img-fluid rounded-start w-100" alt="Morton Dental Website">
-      </div>
-      <div class="col-md-7">
-        <div class="card-body">
-          <h4 class="card-title clinic-title">Morton Dental Clinic – Australia</h4>
-
-          <!-- Collapsible Details -->
-          <div class="collapse" id="projectDetails">
-            <p class="card-text text-light fs-5 custom-paragraph-bg mt-2">
-              This was a real-world freelance project where I collaborated with friends to build the
-              <strong>official website for Morton Dental</strong> using <strong>Next.js</strong>. The site is fully responsive,
-              SEO-optimized, and professionally designed to represent an Australian dental clinic’s services.
-              We were also paid for this project.
-            </p>
-          </div>
-
-          <!-- Tech Stack -->
-          <p class="card-text">
-            <span class="badge bg-secondary">Tech Stack: Next.js, Tailwind CSS</span>
-          </p>
-
-          <!-- Toggle Button -->
-          <button class="btn btn-outline-success mt-2 toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#projectDetails" aria-expanded="false" aria-controls="projectDetails">
-            <i class="fas fa-chevron-down"></i> <span class="toggle-text">Show Details</span>
-          </button>
-
-          <!-- Visit Website -->
-          <a href="https://www.mortondental.com.au/" target="_blank" class="btn btn-outline-info mt-3 ms-2">
-            <i class="fas fa-external-link-alt"></i> Visit Website
-          </a>
+      <div class="blog-modern">
+        <div class="blog-img blog-img-blossoms"></div>
+        <div class="blog-content">
+          <h3>Capturing the Beauty of Blossoms in My Hometown</h3>
+          <p>A heartfelt blog post about the scenic blossoms and nature I've captured in my hometown.</p>
+          <a href="https://shipali.weebly.com/" target="_blank">Read Blog <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-
-
-<!--  Blog Card -->
-<div class="blog-card fade-in mt-5">
-  <h3 class="section-title text-center"><i class="fas fa-pen-nib text-warning"></i> My Blog</h3>
-
-  <div class="card blog-preview shadow-lg">
-    <div class="row g-0 align-items-center">
-      <div class="col-md-4 col-12">
-  <img src="{{ url_for('static', filename='images/blog.png') }}" class="img-fluid rounded-start" alt="Blog Image">
-</div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">Capturing the Beauty of Blossoms in My Hometown</h5>
-          <p class="card-text text-light">
-            A heartfelt blog post about the scenic blossoms and nature I’ve captured in my hometown. Discover the colors, calmness, and creativity behind each picture.
-          </p>
-          <a href="https://shipali.weebly.com/" class="btn btn-outline-warning" target="_blank">
-            <i class="fas fa-arrow-right"></i> Read Blog
-          </a>
+      <div class="blog-modern">
+        <div class="blog-img blog-img-oops"></div>
+        <div class="blog-content">
+          <h3>OOPs in Python</h3>
+          <p>A deep dive into Object-Oriented Programming concepts in Python — classes, inheritance, polymorphism, encapsulation, and more.</p>
+          <a href="https://oop-python.hashnode.dev/oop-in-python" target="_blank">Read Blog <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
+
     </div>
-  </div>
+  </section>
+
+  <!-- CODING PLATFORMS -->
+  <section class="platform-section">
+    <h2 class="section-heading"><i class="fas fa-keyboard"></i> Coding Practice</h2>
+    <div class="plat-grid">
+      <a href="https://www.codechef.com/users/shipali_k" target="_blank" class="plat-card"><img src="{{ url_for('static', filename='images/codechef.jpeg') }}"><span>CodeChef</span></a>
+      <a href="https://www.geeksforgeeks.org/user/shipali_k/" target="_blank" class="plat-card"><img src="{{ url_for('static', filename='images/gfg.png') }}"><span>GeeksforGeeks</span></a>
+      <a href="https://www.w3profile.com/shipali/" target="_blank" class="plat-card"><img src="{{ url_for('static', filename='images/w3sch.jpeg') }}"><span>W3Schools</span></a>
+      <a href="https://www.hackerrank.com/profile/preethikotyan17" target="_blank" class="plat-card"><img src="{{ url_for('static', filename='images/hackerank.png') }}"><span>HackerRank</span></a>
+    </div>
+  </section>
+
 </div>
-<!-- Coding Practice Platforms -->
-<section class="coding-platforms mt-5 fade-slide-in">
-  <h3 class="section-title text-center"><i class="fas fa-keyboard text-info"></i> Coding Practice Platforms</h3>
-  <p class="text-light text-center fs-5 mb-4">I love solving problems, exploring data structures, and practicing coding regularly on various platforms.</p>
-
-  <div class="platforms-grid">
-     <a href="https://www.codechef.com/users/shipali_k" target="_blank" class="platform-icon">
-      <img src="{{ url_for('static', filename='images/codechef.jpeg') }}" alt="CodeChef">
-      <span>CodeChef</span>
-    </a>
-
-    <a href="https://www.geeksforgeeks.org/user/shipali_k/" target="_blank" class="platform-icon">
-      <img src="{{ url_for('static', filename='images/gfg.png') }}" alt="GeeksforGeeks">
-      <span>GeeksforGeeks</span>
-    </a>
-
-    <a href="https://www.w3profile.com/shipali/" target="_blank" class="platform-icon">
-      <img src="{{ url_for('static', filename='images/w3sch.jpeg') }}" alt="W3Schools">
-      <span>W3Schools</span>
-    </a>
-
-   
-
-    <a href="https://www.hackerrank.com/profile/preethikotyan17" target="_blank" class="platform-icon">
-      <img src="{{ url_for('static', filename='images/hackerank.png') }}" alt="HackerRank">
-      <span>HackerRank</span>
-    </a>
-
-    <a href="https://leetcode.com/u/shipali_k/" target="_blank" class="platform-icon">
-      <img src="{{ url_for('static', filename='images/leete.png') }}" alt="LeetCode">
-      <span>LeetCode</span>
-    </a>
-</div>
-</div>
-
 {% endblock %}
