@@ -36,7 +36,7 @@ def experience():
 
 @app.route('/resume')
 def resume():
-    return redirect(url_for('static', filename='pdf/shipali_k.pdf'))
+    return redirect(url_for('static', filename='pdf/SHIPALI_K_Resume.pdf'))
 
 @app.route('/contact', methods=["GET", "POST"])
 def contact():
