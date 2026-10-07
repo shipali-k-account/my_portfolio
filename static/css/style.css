@@ -1671,3 +1671,26 @@ nav ul li a:hover {
 }
 
 
+
+@media (max-width: 768px) {
+  .hero-text-centered h2 {
+    white-space: normal;
+    line-height: 1.5;
+  }
+
+  .hero-text-centered p {
+    line-height: 1.6;
+    overflow-wrap: break-word;
+  }
+
+  .hero-buttons {
+    width: 100%;
+  }
+
+  .btn-main,
+  .btn-outline {
+    max-width: 280px;
+    width: 100%;
+    text-align: center;
+  }
+}
